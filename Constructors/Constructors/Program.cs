@@ -12,6 +12,7 @@
         {
             QuizVraag quizVraag = new QuizVraag("Hier komt de vraag", "Hier komt het antwoord");
             Quiz quiz = new Quiz(10,10);
+            quiz VoegVraagToeOpIndex(0,quizVraag)
         }
     }
 }

@@ -16,5 +16,15 @@ namespace Constructors
             vragen = new QuizVraag[aantalVragen];
             ingevuldeAntwoorden = new QuizVraagAntwoord[aantalIngevuldeAntwoorden];
         }
+
+        internal void VoegVraagToeOpindex(int index, QuizVraag vraag)
+        {
+            vragen[index] = vraag;
+        }
+
+        internal void VoegVraagToeOpIndex(int index, string vraag, string antwoord)
+        {
+
+        }
     }
 }
