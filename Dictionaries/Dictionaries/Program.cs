@@ -58,11 +58,11 @@
                 "xxxxx"
                 ]);
             Room room3 = new Room(1, 1, [
-                "xxxxx",
+                "xxxx ",
                 "    x",
-                "xxxxx",
+                "xxxx ",
                 "    x",
-                "xxxxx"
+                "xxxx "
                 ]);
 
             rooms.Add(room0.GetRoomLocationKey(), room0);
@@ -79,7 +79,6 @@
 
         private void ShowRoom(int x, int y)
         {
-            Room room = rooms[$"{x},{y}"];
 
             
 
@@ -87,13 +86,15 @@
 
             if (hasRoom)
             {
-                Console.WriteLine($"You are in room {x},{y}");
+                Room room = rooms[$"{x},{y}"];
+                Console.WriteLine($"You are in room ");
                 foreach (string r in room.level)
+
                 {
                     Console.WriteLine(r);
                 }
             } else {
-                Console.WriteLine($"Warning! Room Does not exist.");
+                Console.WriteLine($"Warning! Room {x},{y} Does not exist.");
             }
         }
 
